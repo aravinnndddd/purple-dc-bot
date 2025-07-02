@@ -3,16 +3,16 @@ const fs = require("fs");
 const path = require("path");
 const { Client, GatewayIntentBits, Partials, Events, EmbedBuilder, AttachmentBuilder } = require("discord.js");
 const Canvas = require("canvas");
-const http = require("http");
+// const http = require("http");
 
-const PORT = process.env.PORT || 3000; // Render sets this automatically
+// const PORT = process.env.PORT || 3000; // Render sets this automatically
 
-http.createServer((req, res) => {
-  res.writeHead(200, { "Content-Type": "text/plain" });
-  res.end("Bot is running!");
-}).listen(PORT, () => {
-  console.log(`🌐 Server is listening on port ${PORT} (for Render)`);
-});
+// http.createServer((req, res) => {
+//   res.writeHead(200, { "Content-Type": "text/plain" });
+//   res.end("Bot is running!");
+// }).listen(PORT, () => {
+//   console.log(`🌐 Server is listening on port ${PORT} (for Render)`);
+// });
 
 const client = new Client({
   intents: [
